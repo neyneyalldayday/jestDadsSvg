@@ -51,6 +51,6 @@ To use this application, you need to have Node.js installed on your computer. If
  ## Author
 
  * nene
- * Email: [neneEmail](mailto://http://www.drfrankenstein123@gmail.com)
+ * Email: [neneEmail](mailto:drfrankenstein123@gmail.com)
  * Git Hub  [My Github](https://github.com/neyneyalldayday/jestDadsSvg)
 
