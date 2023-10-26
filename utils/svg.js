@@ -1,19 +1,20 @@
 class SVG {
     constructor(){
         this.textEl = ""
-        this.shapeEl = ""
+        this.shapeEl = null
     }
 
     renderSvg(){
-        return `<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">${this.shapeEl}${this.textEl}</svg>`
+        const shapeSvg = this.shapeEl ? this.shapeEl.render() : '';
+        return `<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">${shapeSvg}${this.textEl}</svg>`
     }
 
     setText(color , text ){
-        this.textEl = `<text x="20" y="40" font-family="Arial" font-size="24" fill="${color}">${text}</text>`
+        this.textEl = `<text x="50" y="50" font-family="Arial" text-anchor="middle" alignment-baseline="middle" font-size="24" fill="${color}">${text}</text>`
     }
 
     setShape(shape){
-        this.shapeEl = shape.renderSvg()
+        this.shapeEl = shape
     }
 }
 

@@ -7,7 +7,7 @@ describe("Circle", ()=>{
         const shape = new Circle()
         const color = shape.setShapeColor("pink")
         const expected = `<circle cx="50" cy="50" r="40" fill="pink" />`
-        expect(shape.renderShape(color)).toEqual(expected)
+        expect(shape.render(color)).toEqual(expected)
     })
 })
 describe("Square", ()=>{
@@ -15,7 +15,7 @@ describe("Square", ()=>{
         const shape = new Square()
         const color = shape.setShapeColor("blue")
         const expected = `<rect x="10" y="10" width="80" height="80" fill="blue" />`
-        expect(shape.renderShape(color)).toEqual(expected)
+        expect(shape.render(color)).toEqual(expected)
     })
 })
 describe("Circle", ()=>{
@@ -23,7 +23,7 @@ describe("Circle", ()=>{
         const shape = new Triangle()
         const color = shape.setShapeColor("green")
         const expected = `<polygon points="50,10 10,90 90,90" fill="green" />`
-        expect(shape.renderShape(color)).toEqual(expected)
+        expect(shape.render(color)).toEqual(expected)
     })
 })
 
