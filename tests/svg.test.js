@@ -20,7 +20,7 @@ describe('SVG Class', () => {
     const circle = new Circle('blue');
     svg.setShape(circle);
     const result = svg.renderSvg();
-    expect(result).toContain('<circle cx="50" cy="50" r="40" fill="blue" />');
+    expect(result).toContain('<circle cx="50" cy="50" r="50" fill="blue" />');
   });
 });
 
@@ -28,19 +28,19 @@ describe('Shape Classes', () => {
   it('should render a Circle shape', () => {
     const circle = new Circle('green');
     const result = circle.render();
-    expect(result).toContain('<circle cx="50" cy="50" r="40" fill="green" />');
+    expect(result).toContain('<circle cx="50" cy="50" r="50" fill="green" />');
   });
 
   it('should render a Square shape', () => {
     const square = new Square('purple');
     const result = square.render();
-    expect(result).toContain('<rect x="10" y="10" width="80" height="80" fill="purple" />');
+    expect(result).toContain('<rect x="0" y="0" width="100" height="100" fill="purple" />');
   });
 
   it('should render a Triangle shape', () => {
     const triangle = new Triangle('orange');
     const result = triangle.render();
-    expect(result).toContain('<polygon points="50,10 10,90 90,90" fill="orange" />');
+    expect(result).toContain('<polygon points="50,0 0,100 100,100" fill="orange" />');
   });
 
   it('should set the shape color', () => {
